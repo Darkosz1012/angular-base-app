@@ -20,6 +20,7 @@ import { PostComponent } from './post/post.component';
 import { AvatarModule } from 'ngx-avatar';
 import { AddPostComponent } from './add-post/add-post.component';
 import { PostsListComponent } from './posts-list/posts-list.component';
+import { HeaderWithEventComponent } from './header-with-event/header-with-event.component';
 
 @NgModule({
     imports: [
@@ -38,7 +39,8 @@ import { PostsListComponent } from './posts-list/posts-list.component';
         SignupComponent,
         PostComponent,
         AddPostComponent,
-        PostsListComponent
+        PostsListComponent,
+        HeaderWithEventComponent
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },

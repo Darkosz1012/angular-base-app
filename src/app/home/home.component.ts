@@ -10,7 +10,7 @@ import { Post } from '@app/_models/post';
 export class HomeComponent {
     loading = false;
     currentUser: User | null = null;
-    
+    version = "v13";
 
     constructor(private userService: UserService,
         private router: Router,
@@ -28,5 +28,7 @@ export class HomeComponent {
         this.authenticationService.logout();
         this.router.navigate(['/login']);
     }
-    
+    myAlert(event:any){
+        alert(event)
+    }
 }

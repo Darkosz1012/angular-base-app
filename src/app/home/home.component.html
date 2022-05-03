@@ -2,7 +2,8 @@
     <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button> -->
-    <h1>Angular</h1>
+    <!-- <h1>Angular</h1> -->
+    <app-header-with-event (whenClick)="myAlert($event)" [text]="version">Angular</app-header-with-event>
     <nav>
     <a routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a>
     <a routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/addpost">Add post</a>
