@@ -1,0 +1,30 @@
+:host{
+    margin: 20px;
+    .mat-card{
+        max-width: 100vw;
+        width: 500px;
+        .mat-card-avatar{
+            width: auto;
+            height: auto;
+        }
+        .mat-card-header{
+            // align-items: center;
+            // flex-direction: row-reverse;
+
+            .mat-card-title{
+                margin-top: 5px;
+                
+            }
+            .mat-card-subtitle{
+                margin-bottom: 0;
+            }
+            // &>*{
+            //     display: block;
+            // }
+        }
+        .mat-card-content{
+            margin-top: 20px;
+        }
+    }
+    
+}

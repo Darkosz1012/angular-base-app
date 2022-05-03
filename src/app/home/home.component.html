@@ -1,0 +1,17 @@
+﻿<mat-toolbar color="primary" class="menu">
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button> -->
+    <h1>Angular</h1>
+    <nav>
+    <a routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a>
+    <a routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/addpost">Add post</a>
+    </nav>
+    <button mat-raised-button color="accent" (click)="logout()">Logout</button>
+  </mat-toolbar>
+
+<main>
+    <router-outlet></router-outlet>
+    
+    
+</main>
